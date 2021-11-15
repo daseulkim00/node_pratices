@@ -44,5 +44,12 @@
       Password: ...
       [douzone-daseul-math] 안에서 $ npm publish
 
+7. helloweb-ex01: 맨바닥에서 웹애플리케이션 만들어 보기
+    1) app01: based on http: core Module
+    2) app02: based on http, fs: core Module
+    3) app03: based on connect, serve-static: npm package
+    4) app04: based on connect, serve-static, connect-route: npm package
+
+8. helloweb-ex02: express 프레임워크 기반의 웹애플리케이션 만들기
 
     
