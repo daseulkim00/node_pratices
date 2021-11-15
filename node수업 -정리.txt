@@ -36,4 +36,13 @@
         - 로컬 배포
         - 원격 배포
 
+6. npmjs.com npm registry에 패키지 배포
+    1. 사용자 등록 
+    2. 배포
+      $ npm adduser
+      Username: ...
+      Password: ...
+      [douzone-daseul-math] 안에서 $ npm publish
+
+
     
