@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "douzone-bipa-da": "file:../douzone-bipa-da"
+    "douzone-daseul-math": "file:../douzone-daseul-math"
   }
 }

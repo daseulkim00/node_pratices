@@ -1,8 +1,8 @@
 {
-  "name": "douzone-bipa-da",
+  "name": "douzone-daseul-math",
   "version": "1.0.0",
   "description": "",
-  "main": "douzone-bipa-da.js",
+  "main": "douzone-daseul-math.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
