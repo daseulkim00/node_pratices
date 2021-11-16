@@ -1,15 +1,11 @@
 const mysql = require('mysql2');
+const dbconn = require('./dbconn');
 const util = require('util');
 
 module.exports = {
-    findAll: async function(){   // awiat 해서 async 달아줫다.
-        const  conn = mysql.createConnection({
-            host: '127.0.0.1',
-            port: 3306,
-            user: 'webdb',
-            password:'webdb',
-            database:'webdb'
-        });
+    findAll: async function(callback){   // awiat 해서 async 달아줫다.
+     
+        const conn = dbconn();
 
     // 이거 이해 잘하쟈    
     // const query = function(sql, data) {
@@ -26,7 +22,8 @@ module.exports = {
     const query = util.promisify(conn.query).bind(conn); 
     
     try{
-    return await query('select no, first_name as firstName, last_name as lastName, email from emaillist order by no desc', []);
+    return await query('select no, first_name as firstName, last_name as lastName, email from emaillist order by no desc', 
+    []);  // 바인딩해야할 데이터
     } catch(e){
         console.error(e);
       } finally{
@@ -34,5 +31,19 @@ module.exports = {
       }
     // return await conn.query(sql,[]);
 
+    },
+    insert: async function(emaillist){
+        const conn = dbconn();
+        const query = util.promisify(conn.query).bind(conn); 
+
+        try{
+            return await query('insert into emaillist(first_name, last_name, email) values(?, ?, ?)',
+             Object.values(emaillist)
+             );
+            } catch(e){
+                console.error(e);
+              } finally{
+                  conn.end();
+              }
     }
 }
