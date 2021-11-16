@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = {             
     sum: function() {
         var sum = 0;
         Array.from(arguments).forEach(function(e){

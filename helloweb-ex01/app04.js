@@ -34,14 +34,14 @@ app.use(connectRoute(function(router) {
         resp.writeHead(200, {
             'Content-Type': 'text/html'
         });
-        resp.end('<h1>게스트북이랍니다~</h1>');
+        resp.end('<h1>guestbook</h1>');
     });
 
     router.get("/board", function(req, resp){ 
         resp.writeHead(200, {
             'Content-Type': 'text/html'
         });
-        resp.end('<h1>게시팔이랍니다~</h1>');
+        resp.end('<h1>board</h1>');
     });
 
     router.get("/board/:no", function(req, resp){ 
