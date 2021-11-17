@@ -38,7 +38,7 @@ module.exports = {
 
         try{
             return await query('insert into emaillist(first_name, last_name, email) values(?, ?, ?)',
-             Object.values(emaillist)
+             Object.values(emaillist)  // 배열로 만들어준다.
              );
             } catch(e){
                 console.error(e);
