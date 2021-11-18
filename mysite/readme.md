@@ -10,13 +10,13 @@
 [mysite] $ npm i sequelize
 [mysite] $ npm i dotenv   o
 [mysite] $ npm i multer
-[mysite] $ npm i winston
-[mysite] $ npm i winston-daily-rotate-file
+[mysite] $ npm i winston     O
+[mysite] $ npm i winston-daily-rotate-file     O
 [mysite] $ npm i moment
 
-[mysite] $ npm -D nodemon  o
-[mysite] $ npm -D mocha
-[mysite] $ npm -D chai
+[mysite] $ npm i -D nodemon  o
+[mysite] $ npm i -D mocha
+[mysite] $ npm i -D chai
 
 
 
@@ -46,8 +46,8 @@
     |---[multer-temporary-store]
     |--- config
     |--- public
+    |       |---upload images
     |       |--- assets
-    |               |--- [upload-images]
     |               |--- css
     |               |--- images
     |               |--- js
