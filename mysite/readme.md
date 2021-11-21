@@ -9,7 +9,7 @@
 [mysite] $ npm i express-session
 [mysite] $ npm i sequelize
 [mysite] $ npm i dotenv   o
-[mysite] $ npm i multer
+[mysite] $ npm i multer   o
 [mysite] $ npm i winston     O
 [mysite] $ npm i winston-daily-rotate-file     O
 [mysite] $ npm i moment

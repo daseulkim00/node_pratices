@@ -6,7 +6,7 @@ const path = require('path');
 // error: 0, warn: 1, info: 2, http: 3, verbose: 4, debug: 5, silly: 6
 
 const { combine, timestamp, printf } = winston.format;
-
+                                // 파일 경로
 const logDirectory = path.join(path.dirname(require.main.filename), process.env.LOG_LOCATION);
 const logFormat = printf(log => `${log.timestamp} ${log.level}: ${log.message}`);
 
